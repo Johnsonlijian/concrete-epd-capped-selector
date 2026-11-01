@@ -33,9 +33,9 @@ from dataclasses import replace
 import numpy as np
 import pandas as pd
 
-import r1_core as rc
-import r1_column_design as cd
-from r1_decomposition import GRID_DEMANDS, GRID_WIDTHS_IN, PU_REF_KIP, REF_STEEL_IN2
+import core as rc
+import column_design as cd
+from decomposition import GRID_DEMANDS, GRID_WIDTHS_IN, PU_REF_KIP, REF_STEEL_IN2
 
 EPS = 1e-9
 DATASET_PREFIX = "Primary LCI Data Source"
@@ -105,7 +105,7 @@ def statistics(c: rc.Candidates, baseline_gwp: np.ndarray, label: str) -> dict:
             q = rc.select_capped(c, fstar)
             # Headline C3 is a selector-displacement count inside C2, not a
             # carbon-suboptimality diagnostic.  Use the same definition as
-            # r1_decomposition.capped_comparison so that the ladder and the
+            # decomposition.capped_comparison so that the ladder and the
             # analyst-grid table report the same statistic.
             rate = float(np.mean(c2 & (q != ratio)))
             out[f"c3_{width:g}in_{demand:g}"] = rate
@@ -119,7 +119,7 @@ def main() -> None:
     cases = rc.load_cases()
     fields, datasets = raw_fields()
     primary = rc.build_candidates(records, cases)
-    rc.verify_against_submission(primary)
+    rc.verify_against_reference(primary)
     rc.attach_fields(primary, fields, ["datasets", "presence", "a3", "labels"])
     baseline_gwp = cases.baseline_gwp.to_numpy(dtype=float)
     ladder = []

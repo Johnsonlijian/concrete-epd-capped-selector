@@ -43,7 +43,7 @@ from dataclasses import dataclass, replace
 import numpy as np
 import pandas as pd
 
-import r1_core as rc
+import core as rc
 
 FY = 60000.0
 ES = 29.0e6
@@ -463,7 +463,7 @@ def main() -> None:
     parser.add_argument("--quick", action="store_true", help="main setting only")
     args = parser.parse_args()
     c = rc.build_candidates()
-    rc.verify_against_submission(c)
+    rc.verify_against_reference(c)
     demands(MAIN).to_csv(rc.OUT / "r1_design_demands.csv", index=False)
     # Main results use a weak-dominance tie-break for every selector (and for the design
     # optimum): among equal objective values the stronger of two equal-GWP mixes is taken.

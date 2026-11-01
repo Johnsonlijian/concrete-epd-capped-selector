@@ -1,4 +1,4 @@
-"""Generate submission figures, tables, and manuscript number macros.
+"""Generate manuscript figures, tables and number macros.
 
 All plotted values are read from frozen derived outputs. This script does not
 download data, edit the manuscript, or infer engineering approval.

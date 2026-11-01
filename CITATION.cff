@@ -8,6 +8,7 @@ authors:
     email: "renlijian@imut.edu.cn"
     affiliation: "Inner Mongolia University of Technology"
 year: 2026
+version: "1.0.1"
 date-released: "2026-11-01"
 license: "MIT"
 references:

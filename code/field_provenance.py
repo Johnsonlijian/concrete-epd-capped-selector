@@ -29,9 +29,9 @@ from dataclasses import replace
 import numpy as np
 import pandas as pd
 
-import r1_core as rc
-import r1_column_design as cd
-from r1_decomposition import GRID_DEMANDS, GRID_WIDTHS_IN, PU_REF_KIP, REF_STEEL_IN2
+import core as rc
+import column_design as cd
+from decomposition import GRID_DEMANDS, GRID_WIDTHS_IN, PU_REF_KIP, REF_STEEL_IN2
 
 TOKEN = re.compile(r"(?<![\d.])(\d{1,2},?\d{3}(?:\.0+)?)\s*p\.?s\.?i\.?\b", flags=re.I)
 EPS = 1e-9
@@ -163,7 +163,7 @@ def main() -> None:
     pairs.to_csv(rc.OUT / "r1_knife_river_cross_declaration_pairs.csv", index=False)
     summary["knife_river_cross_declaration"] = kr
     c = rc.build_candidates(records)
-    rc.verify_against_submission(c)
+    rc.verify_against_reference(c)
     summary["primary_candidates_value_pattern"] = {
         "share_multiple_of_500": float(np.mean(c.strength[c.valid] % 500 == 0)),
         "distinct_values": int(len(np.unique(c.strength[c.valid])))}

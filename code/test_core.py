@@ -8,9 +8,9 @@ import numpy as np
 import pandas as pd
 import pytest
 
-import r1_column_design as cd
-import r1_core as rc
-from r1_field_provenance import fc_from_required_average
+import column_design as cd
+import core as rc
+from field_provenance import fc_from_required_average
 
 
 def synthetic(n_cases: int = 400, width: int = 6, seed: int = 7) -> rc.Candidates:
@@ -108,8 +108,8 @@ def test_pareto_order_prefers_stronger_equal_gwp():
 
 
 @pytest.mark.skipif(not (rc.DATA / "analysis_records.csv").exists(), reason="derived data not present")
-def test_vectorised_selectors_reproduce_submission():
-    checks = rc.verify_against_submission(rc.build_candidates())
+def test_vectorised_selectors_reproduce_reference():
+    checks = rc.verify_against_reference(rc.build_candidates())
     assert all(checks.values())
 
 
@@ -131,7 +131,7 @@ def test_governing_and_stack_bookkeeping():
 
 
 def test_paired_bootstrap_of_a_constant_difference(tmp_path, monkeypatch):
-    import r1_extended_checks as ec
+    import extended_checks as ec
     rng = np.random.default_rng(1)
     shares = pd.DataFrame({"company": rng.choice(list("abcdef"), 60)})
     base = rng.uniform(0.3, 0.8, 60)
@@ -150,7 +150,7 @@ def test_paired_bootstrap_of_a_constant_difference(tmp_path, monkeypatch):
 
 
 def test_percentages_never_round_up_to_100():
-    from r1_make_outputs import pct
+    from make_outputs import pct
     assert pct(0.99996) == r"$>$99.9"
     assert pct(1.0) == "100.0" and pct(0.5) == "50.0"
 
@@ -158,6 +158,6 @@ def test_percentages_never_round_up_to_100():
 @pytest.mark.skipif(not rc.RAW.exists() or not (rc.DATA / "analysis_records.csv").exists(),
                     reason="raw or derived data not present")
 def test_column_admissible_subset_size():
-    import r1_extended_checks as ec
+    import extended_checks as ec
     keep = ec.admissible_mask(rc.load_cases())
     assert int((~keep).sum()) == 18

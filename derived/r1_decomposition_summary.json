@@ -1,5 +1,5 @@
 {
-  "verification_against_submission": {
+  "verification_against_reference": {
     "baseline_id": true,
     "candidate_id": true,
     "ratio_candidate_id": true,

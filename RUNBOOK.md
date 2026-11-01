@@ -30,39 +30,39 @@ Run from the archive root, in this order:
 python code/analyze_epd_choices.py
 python code/quantity_model.py
 python code/make_figures_and_tables.py
-python code/r1_decomposition.py
-python code/r1_column_design.py
-python code/r1_strict_subset.py
-python code/r1_field_provenance.py
-python code/r1_robustness.py
-python code/r1_extended_checks.py
-python code/r1_make_outputs.py
+python code/decomposition.py
+python code/column_design.py
+python code/strict_subset.py
+python code/field_provenance.py
+python code/robustness.py
+python code/extended_checks.py
+python code/make_outputs.py
 python -m pytest -q code
 ```
 
 Expected test result with the raw input and full derived tables: **51 passed**. From this
 archive alone: **49 passed, 2 skipped** (two tests need the raw record-level table).
 
-`python code/r1_robustness.py --bootstrap-only` regenerates only
+`python code/robustness.py --bootstrap-only` regenerates only
 `derived/r1_bootstrap_supplier_clusters.csv`; the full run also repeats the Monte Carlo analyses.
 
 ## 4. Quick verification without the raw CSV
 
 The archived `derived/` tables are sufficient for most figure and table regeneration, but
-`r1_make_outputs.py` still expects the derived files listed in its `read_csv`/`read_json`
+`make_outputs.py` still expects the derived files listed in its `read_csv`/`read_json`
 calls. If you only want to inspect the archived numbers, read:
 
-- `derived/r1_decomposition_summary.json` — C1/C2/C3 ranges and the 81-point check.
-- `derived/r1_decomposition_grid.csv` — the 12 analyst-defined scenarios.
-- `derived/r1_comparability_ladder.csv` — scope ladder and C3 grid.
-- `derived/r1_strict_subset_summary.json` — S1–S4 pass rates and strict case counts.
-- `derived/r1_design_validation_summary.csv` — design agreement/regret.
-- `derived/r1_robustness_montecarlo_summary.csv` — Monte Carlo stability.
-- `derived/r1_decomposition_cases.csv` — case-level C1/C2 data.
+- `derived/r1_decomposition_summary.json` 鈥?C1/C2/C3 ranges and the 81-point check.
+- `derived/r1_decomposition_grid.csv` 鈥?the 12 analyst-defined scenarios.
+- `derived/r1_comparability_ladder.csv` 鈥?scope ladder and C3 grid.
+- `derived/r1_strict_subset_summary.json` 鈥?S1鈥揝4 pass rates and strict case counts.
+- `derived/r1_design_validation_summary.csv` 鈥?design agreement/regret.
+- `derived/r1_robustness_montecarlo_summary.csv` 鈥?Monte Carlo stability.
+- `derived/r1_decomposition_cases.csv` 鈥?case-level C1/C2 data.
 
 ## 5. Common issues
 
-- `r1_core.py` looks for the raw CSV at `raw/` or `../raw/` relative to the archive root.
+- `core.py` looks for the raw CSV at `raw/` or `../raw/` relative to the archive root.
   Set `R1_RAW` if it is elsewhere.
 - The code uses U.S. customary units internally (psi, in, kip), matching the source data and
   ACI 318-19; the manuscript reports SI first.

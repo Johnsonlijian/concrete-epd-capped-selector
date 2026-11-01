@@ -23,7 +23,7 @@ import json
 import numpy as np
 import pandas as pd
 
-import r1_core as rc
+import core as rc
 
 GRID_WIDTHS_IN = (12.0, 14.0, 16.0, 18.0)
 GRID_DEMANDS = (0.75, 1.0, 1.25)
@@ -135,12 +135,12 @@ def grid_area(c: rc.Candidates, width: float, pu: float) -> np.ndarray:
 
 def main() -> None:
     c = rc.build_candidates()
-    verification = rc.verify_against_submission(c)
+    verification = rc.verify_against_reference(c)
     frame = base_comparisons(c)
     frame.to_csv(rc.OUT / "r1_decomposition_cases.csv", index=False)
     other = frame.company.ne(rc.NRM)
     summary = {
-        "verification_against_submission": verification,
+        "verification_against_reference": verification,
         "cases": int(len(frame)),
         "c1": {"denominator": int(len(frame)), "lower_gwp_cases": int(frame.c1_lower_gwp.sum()),
                "rate": float(frame.c1_lower_gwp.mean()),

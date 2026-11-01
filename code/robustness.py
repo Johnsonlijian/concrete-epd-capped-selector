@@ -25,9 +25,9 @@ import sys
 import numpy as np
 import pandas as pd
 
-import r1_core as rc
-import r1_column_design as cd
-from r1_decomposition import GRID_DEMANDS, GRID_WIDTHS_IN, PU_REF_KIP, REF_STEEL_IN2
+import core as rc
+import column_design as cd
+from decomposition import GRID_DEMANDS, GRID_WIDTHS_IN, PU_REF_KIP, REF_STEEL_IN2
 
 SEED = 20261013
 EPS = 1e-9

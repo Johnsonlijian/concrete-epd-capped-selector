@@ -1,4 +1,4 @@
-"""Additional checks requested by the internal audit of R1.
+"""Additional consistency checks.
 
 1. Paired supplier-cluster bootstrap of the differences in design agreement between
    selectors.  Selectors are scored on the same cases, so the difference is the
@@ -19,8 +19,8 @@ from dataclasses import replace
 import numpy as np
 import pandas as pd
 
-import r1_column_design as cd
-import r1_core as rc
+import column_design as cd
+import core as rc
 
 SEED = 20261013
 EPS = 1e-9
@@ -84,7 +84,7 @@ def main() -> None:
     records = rc.load_records()
     cases = rc.load_cases()
     primary = rc.build_candidates(records, cases)
-    rc.verify_against_submission(primary)
+    rc.verify_against_reference(primary)
     keep = admissible_mask(cases)
     subset_rows, design_rows = [], []
     adm = primary.subset(keep)

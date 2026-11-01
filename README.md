@@ -9,7 +9,7 @@ It contains the analysis and design code, the derived tables needed to regenerat
 manuscript numbers and figures, the four vector figures, checksums, tests and a runbook.
 The manuscript and submission files are not redistributed.
 
-This version is dated **2026-11-01** and contains the C3/C3-prime selector-displacement
+This is release **v1.0.1** (2026-11-01). It contains the C3/C3-prime selector-displacement
 definitions, the strict observable-data terminology and the final analysis outputs.
 
 ## What is included
@@ -17,7 +17,7 @@ definitions, the strict observable-data terminology and the final analysis outpu
 ```
 code/         analysis, design, figure, provenance and test scripts
 derived/      derived CSV/JSON outputs used by the manuscript and figures
-figures/      Fig1–Fig4 as vector PDFs
+figures/      Fig1鈥揊ig4 as vector PDFs
 README.md     this file
 RUNBOOK.md    exact commands and environment
 requirements.txt
@@ -68,18 +68,18 @@ pip install -r requirements.txt
 python code/analyze_epd_choices.py
 python code/quantity_model.py
 python code/make_figures_and_tables.py
-python code/r1_decomposition.py
-python code/r1_column_design.py
-python code/r1_strict_subset.py
-python code/r1_field_provenance.py
-python code/r1_robustness.py
-python code/r1_extended_checks.py
-python code/r1_make_outputs.py
+python code/decomposition.py
+python code/column_design.py
+python code/strict_subset.py
+python code/field_provenance.py
+python code/robustness.py
+python code/extended_checks.py
+python code/make_outputs.py
 
 python -m pytest -q code
 ```
 
-`python code/r1_robustness.py --bootstrap-only` regenerates only the supplier-cluster bootstrap
+`python code/robustness.py --bootstrap-only` regenerates only the supplier-cluster bootstrap
 (`derived/r1_bootstrap_supplier_clusters.csv`) without the Monte Carlo runs.
 
 The optional marked-manuscript utility compares two LaTeX sources; every sentence, caption,
@@ -103,7 +103,7 @@ reported number and figure.
 
 - **C2** is the set of matched cases in which the ratio selector `R` chooses a higher declared
   GWP than fixed-volume selection `F`: 995 of 1,538 cases (64.7%).
-- **C3** is `C2 ∩ {Q ≠ R}`; **C3′** is `C2 ∩ {Q ≠ F}`. Both numerators are restricted to C2,
+- **C3** is `C2 鈭?{Q 鈮?R}`; **C3鈥?* is `C2 鈭?{Q 鈮?F}`. Both numerators are restricted to C2,
   but both rates use all 1,538 cases. The two counts are not complementary: an intermediate
   resolution is counted in both.
 - The **strict observable-data subset** is a sensitivity subset built from the recorded PCR
@@ -115,7 +115,7 @@ reported number and figure.
 
 ## Outputs
 
-`r1_make_outputs.py` writes regenerated figures to `figures/` and table/number inputs to a
+`make_outputs.py` writes regenerated figures to `figures/` and table/number inputs to a
 `manuscript/` directory by default. Set `R1_OUT_DIR` to write those inputs elsewhere. The
 manuscript directory is not tracked in this repository; the archived `derived/` and
 `figures/` trees are the reference outputs.

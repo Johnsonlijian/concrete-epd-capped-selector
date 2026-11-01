@@ -1,4 +1,4 @@
-"""Shared candidate sets and selectors for the first-revision (R1) analyses.
+"""Shared candidate sets and selectors for the analysis.
 
 Every scenario is one primary description-series case (menu, target strength)
 from ``choices_description_series_1000.csv``.  Candidate sets are rebuilt from
@@ -226,7 +226,7 @@ def model_area(strength, pu_kip, min_gross_in2, steel_in2) -> np.ndarray:
                       if np.ndim(min_gross_in2) else min_gross_in2 - steel_in2)
 
 
-def verify_against_submission(c: Candidates, data_dir: Path = DATA) -> dict:
+def verify_against_reference(c: Candidates, data_dir: Path = DATA) -> dict:
     """Reproduce every selection reported in the submitted derived files."""
     cases = c.cases
     fv_exact = select_fixed_volume(c, c.exact)
@@ -253,5 +253,5 @@ def verify_against_submission(c: Candidates, data_dir: Path = DATA) -> dict:
         ok &= bool((c.take(ratio, c.row_id) == part.ordinary_selected_id.to_numpy()).all())
     checks["quantity_model_scenarios"] = ok
     if not all(checks.values()):
-        raise AssertionError(f"Vectorised selectors do not reproduce the submission: {checks}")
+        raise AssertionError(f"Vectorised selectors do not reproduce the reference selections: {checks}")
     return checks
