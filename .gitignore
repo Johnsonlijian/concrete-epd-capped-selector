@@ -1,0 +1,24 @@
+# raw third-party data
+raw/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# generated manuscript material (not part of this repository)
+manuscript/
+
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# OS/editor
+.DS_Store
+Thumbs.db

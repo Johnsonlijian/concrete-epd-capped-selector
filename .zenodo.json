@@ -1,0 +1,29 @@
+{
+  "title": "Reproducibility package: capped strength-credit selector for concrete EPD comparisons",
+  "description": "Analysis and design code, derived tables, figures, checksums and runbook for the manuscript 'Quantity constraints and strength credit in concrete EPD comparisons: a capped selector tested against code-compliant column designs'. The package does not redistribute the raw Mendeley compilation or third-party EPD PDFs.",
+  "creators": [
+    {
+      "name": "REN, Lijian",
+      "affiliation": "Inner Mongolia University of Technology"
+    }
+  ],
+  "publication_date": "2026-11-01",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "concrete",
+    "environmental product declaration",
+    "embodied carbon",
+    "strength credit",
+    "reproducibility",
+    "ACI 318-19"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17632/r4jgxk2mhn.5",
+      "relation": "requires",
+      "scheme": "doi"
+    }
+  ]
+}

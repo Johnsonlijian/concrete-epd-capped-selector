@@ -1,0 +1,14 @@
+{
+  "strict_case_denominator": 1538,
+  "common_cohort_positive_by_scope": {
+    "plant": 1408,
+    "component": 1183,
+    "series": 357
+  },
+  "ratio_excess_cases": 995,
+  "ratio_excess_median_among_positive": 0.09567901234567901,
+  "ratio_excess_companies": 28,
+  "ratio_excess_cases_without_nrm": 684,
+  "known_wc_cases": 13,
+  "known_wc_not_increased_cases": 13
+}

@@ -1,0 +1,33 @@
+{
+  "policy_version": "allowlisted-alias-quarantine-v1",
+  "summary": {
+    "input_rows": 39745,
+    "output_rows": 39412,
+    "allowlisted_blocks": 13,
+    "matched_blocks": 13,
+    "affected_input_rows": 472,
+    "unaffected_input_rows": 39273,
+    "unaffected_records_equal": true,
+    "cross_label_identities": 234,
+    "cross_label_rows": 468,
+    "quarantined_identities": 99,
+    "quarantined_rows": 198,
+    "components_conflict_identities": 99,
+    "wc_conflict_identities": 13,
+    "other_payload_conflict_identities": 0,
+    "reconciled_identities": 135,
+    "duplicate_rows_removed": 135
+  },
+  "source_cluster_map": {
+    "martin marietta - smyrna ready mix concrete, llc.": "source-cluster:smyrna",
+    "smyrna ready mix": "source-cluster:smyrna",
+    "us concrete mix / smyrna ready mix": "source-cluster:smyrna",
+    "amrize": "source-cluster:amrize-holcim",
+    "holcim - aggregate industries": "source-cluster:amrize-holcim",
+    "source-cluster:smyrna": "source-cluster:smyrna",
+    "source-cluster:amrize-holcim": "source-cluster:amrize-holcim"
+  },
+  "source_cluster_interpretation": "linked source-label clusters; NOT verified legal suppliers",
+  "canonical_source_interpretation": "analytical URNs, not retrieval URLs; use original_source in record_audit",
+  "source_verification": "Original-PDF and omitted raw-field conflicts remain unresolved; no independent source validation is claimed."
+}

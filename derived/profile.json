@@ -1,0 +1,61 @@
+{
+  "raw_rows": 47413,
+  "raw_columns": 148,
+  "raw_full_duplicate_rows": 48,
+  "companies_raw": 83,
+  "physical_plant_keys_raw": 663,
+  "unit_counts": {
+    "1 m3 of concrete": 47413
+  },
+  "age_counts": {
+    "1": 58,
+    "2": 46,
+    "3": 63,
+    "7": 19,
+    "14": 2,
+    "28": 44922,
+    "42": 146,
+    "45": 3,
+    "56": 2067,
+    "90": 82,
+    "120": 3,
+    "365": 2
+  },
+  "identity_conflict_rows_raw": 1261,
+  "missing_wc_rows_raw": 44243,
+  "filter_rule": "2500-8000 psi; declared age >=28; 1m3; positive finite A1-A3 GWP; nonempty menu identifiers; no flagged specialty or same-label conflicts",
+  "eligible_before_dedup": 39993,
+  "sha256": "6b6eaff116aac5c849a6f1031bdd0787ac9c545c728707de81d755e0654ac0af",
+  "software": {
+    "python": "3.11.15",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6"
+  },
+  "within_label_rows": 39745,
+  "within_label_duplicates_removed": 248,
+  "alias_reconciliation": {
+    "input_rows": 39745,
+    "output_rows": 39412,
+    "allowlisted_blocks": 13,
+    "matched_blocks": 13,
+    "affected_input_rows": 472,
+    "unaffected_input_rows": 39273,
+    "unaffected_records_equal": true,
+    "cross_label_identities": 234,
+    "cross_label_rows": 468,
+    "quarantined_identities": 99,
+    "quarantined_rows": 198,
+    "components_conflict_identities": 99,
+    "wc_conflict_identities": 13,
+    "other_payload_conflict_identities": 0,
+    "reconciled_identities": 135,
+    "duplicate_rows_removed": 135
+  },
+  "analysis_rows": 39412,
+  "analysis_28_day_rows": 37725,
+  "analysis_companies": 80,
+  "explicit_psi_series_rows_28d": 8777,
+  "deduplicated_rows_removed": 248,
+  "alias_policy_rows_removed": 333,
+  "analysis_plant_issue_keys": 3453
+}

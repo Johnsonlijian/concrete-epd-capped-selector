@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, cite the associated manuscript and the input dataset."
+title: "Reproducibility package: capped strength-credit selector for concrete EPD comparisons"
+abstract: "Analysis and design code, derived tables, figures, checksums and runbook for the manuscript 'Quantity constraints and strength credit in concrete EPD comparisons: a capped selector tested against code-compliant column designs'."
+authors:
+  - family-names: "REN"
+    given-names: "Lijian"
+    email: "renlijian@imut.edu.cn"
+    affiliation: "Inner Mongolia University of Technology"
+year: 2026
+date-released: "2026-11-01"
+license: "MIT"
+references:
+  - type: "data"
+    title: "Compiled Dataset of Concrete Mixture Environmental Product Declarations in the U.S.A."
+    doi: "10.17632/r4jgxk2mhn.5"
+    year: 2026

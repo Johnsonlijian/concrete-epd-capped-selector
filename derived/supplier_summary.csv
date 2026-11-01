@@ -1,0 +1,29 @@
+company,cases,positive,positive_rate,mean_gain,median_gain
+national ready mix,749,323,0.43124165554072097,0.06033836591435444,0.0
+central concrete,282,7,0.024822695035460994,0.0007223643827373056,0.0
+source-cluster:smyrna,106,4,0.03773584905660377,0.002292003759484203,0.0
+eastern concrete,82,0,0.0,0.0,0.0
+cadman / heidelberg materials,64,6,0.09375,0.0051344448627057325,0.0
+riverbend materials,47,6,0.1276595744680851,0.007994576756376022,0.0
+titan virginia ready-mix,36,2,0.05555555555555555,0.0037943121084848294,0.0
+gotham ready mix llc,23,3,0.13043478260869565,0.002979273054752682,0.0
+source-cluster:amrize-holcim,20,0,0.0,0.0,0.0
+american rock products (arp),20,2,0.1,0.0002595959595959596,0.0
+bonded concrete inc. / the clemente group,16,1,0.0625,0.004278728606356968,0.0
+cti ready mix,15,0,0.0,0.0,0.0
+kirkpatrick concrete,15,0,0.0,0.0,0.0
+graniterock,10,0,0.0,0.0,0.0
+tilcon connecticut inc.,9,0,0.0,0.0,0.0
+cemex,8,0,0.0,0.0,0.0
+bayview redi mix inc.,7,0,0.0,0.0,0.0
+central pre-mix (cpm),7,1,0.14285714285714285,0.002736726874657909,0.0
+knife river corporation,4,0,0.0,0.0,0.0
+"prairie material, llc",4,2,0.5,0.07421501317801711,0.07123287671232877
+nashville ready mix,4,0,0.0,0.0,0.0
+miles sand & gravel,3,0,0.0,0.0,0.0
+four winds concrete inc.,2,0,0.0,0.0,0.0
+century ready-mix,1,0,0.0,0.0,0.0
+f&f concrete,1,0,0.0,0.0,0.0
+interstate concrete and asphalt (ica),1,0,0.0,0.0,0.0
+silver strike concrete,1,0,0.0,0.0,0.0
+stoneway concrete,1,0,0.0,0.0,0.0

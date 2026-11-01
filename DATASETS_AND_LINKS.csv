@@ -1,0 +1,10 @@
+dataset,doi,url,license,used_for,redistributed
+Compiled Dataset of Concrete Mixture Environmental Product Declarations in the U.S.A. (version 5),10.17632/r4jgxk2mhn.5,https://data.mendeley.com/datasets/r4jgxk2mhn/5,CC BY 4.0,primary EPD input,no
+Knife River Corporation NRMCA EPD 10023,,https://www.nrmca.org/wp-content/uploads/2019/10/KnifeRiverEPD-DocumentNRMCAEPD10023.pdf,public EPD document,strength-field provenance and extraction audit,no
+StructurePoint tied-column interaction diagram example (ACI 318-19),,https://structurepoint.org/publication/pdf/Interaction-Diagram-Tied-Reinforced-Concrete-Column-Design-Strength-ACI-318-19.pdf,public technical example,section-analysis benchmark,no
+NSF 1112-19 PCR for Concrete v2.3 (2024 extension),,,public PCR,comparability and strength-field definitions,no
+ACI 318-19,,https://www.concrete.org,copyrighted standard,design equations,no
+ACI 301-20,,https://www.concrete.org,copyrighted standard,required-average-strength margins,no
+ASCE/SEI 7-16,,https://www.asce.org,copyrighted standard,load combinations,no
+IBC 2021,,https://www.iccsafe.org,copyrighted model code,fire and geometric minima,no
+CRSI industry-wide rebar EPD (2022),,https://www.crsi.org,public EPD,reinforcement carbon factor,no

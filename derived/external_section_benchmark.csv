@@ -1,0 +1,15 @@
+point,quantity,calculated,published,published_pdf_page,absolute_difference,within_0_1_reported_units
+nominal_axial_kip,P_kip,1534.0,1534.0,7,0.0,True
+factored_axial_kip,P_kip,997.1,997.1,7,0.0,True
+capped_axial_kip,P_kip,797.6800000000001,797.7,7,0.01999999999998181,True
+zero_far_bar_stress,P_kip,622.31,622.3,29,0.009999999999990905,True
+zero_far_bar_stress,M_kip_ft,169.86341666666667,169.86,29,0.0034166666666521905,True
+half_yield_far_bar,P_kip,421.90999999999997,421.9,29,0.009999999999990905,True
+half_yield_far_bar,M_kip_ft,220.05033974358972,220.05,29,0.00033974358970567664,True
+balanced,P_kip,270.89140589569155,270.9,29,0.008594104308428996,True
+balanced,M_kip_ft,250.77437028167276,250.77,29,0.004370281672748888,True
+tension_controlled,P_kip,171.6415384615384,171.6,29,0.041538461538408455,True
+tension_controlled,M_kip_ft,286.7507426035503,286.75,29,0.0007426035502930972,True
+pure_bending,P_kip,2.5579538487363607e-14,0.0,29,2.5579538487363607e-14,True
+pure_bending,M_kip_ft,213.91232020694616,213.96,29,0.04767979305384529,True
+pure_tension,P_kip,432.0,432.0,29,0.0,True

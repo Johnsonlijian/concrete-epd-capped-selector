@@ -1,0 +1,15 @@
+{
+  "candidate_share_passing": {
+    "S1_datasets": 0.9773445732349842,
+    "S2_constituents": 0.6398840885142255,
+    "S3_A3": 0.9848524762908325,
+    "S4_labels": 0.999868282402529,
+    "all": 0.6234193888303478
+  },
+  "primary_cases": 1538,
+  "strict_cases": 1132,
+  "strict_current_cases": 789,
+  "strict_suppliers": 27,
+  "strict_nrm_cases": 561,
+  "dataset_fields_checked": 50
+}

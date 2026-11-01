@@ -1,0 +1,128 @@
+{
+  "external_check": "14 section-capacity outputs against StructurePoint 2022, PDF pages 7 and 29",
+  "max_absolute_benchmark_difference": 0.04767979305384529,
+  "benchmark_design_axial_kip": 797.6800000000001,
+  "model_boundary": "fixed longitudinal steel area and equal length; axial section capacity plus imposed geometry floor; no member, durability, seismic, fire or construction qualification",
+  "scenarios": [
+    {
+      "minimum_width_in": 12.0,
+      "demand_ratio": 0.75,
+      "cases": 1538,
+      "affected_cases": 36,
+      "affected_fraction": 0.02340702210663199,
+      "median_excess_affected": 0.05153148738054392,
+      "saturation_strength_psi": 5800.173010380623,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 12.0,
+      "demand_ratio": 1.0,
+      "cases": 1538,
+      "affected_cases": 0,
+      "affected_fraction": 0.0,
+      "median_excess_affected": 0,
+      "saturation_strength_psi": 9117.647058823532,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 12.0,
+      "demand_ratio": 1.25,
+      "cases": 1538,
+      "affected_cases": 0,
+      "affected_fraction": 0.0,
+      "median_excess_affected": 0,
+      "saturation_strength_psi": 12435.12110726644,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 14.0,
+      "demand_ratio": 0.75,
+      "cases": 1538,
+      "affected_cases": 495,
+      "affected_fraction": 0.32184655396618983,
+      "median_excess_affected": 0.06736571462556551,
+      "saturation_strength_psi": 4195.869837296621,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 14.0,
+      "demand_ratio": 1.0,
+      "cases": 1538,
+      "affected_cases": 4,
+      "affected_fraction": 0.002600780234070221,
+      "median_excess_affected": 0.0160822181164485,
+      "saturation_strength_psi": 6595.744680851065,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 14.0,
+      "demand_ratio": 1.25,
+      "cases": 1538,
+      "affected_cases": 0,
+      "affected_fraction": 0.0,
+      "median_excess_affected": 0,
+      "saturation_strength_psi": 8995.619524405509,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 16.0,
+      "demand_ratio": 0.75,
+      "cases": 1538,
+      "affected_cases": 907,
+      "affected_fraction": 0.5897269180754227,
+      "median_excess_affected": 0.08589426586600735,
+      "saturation_strength_psi": 3180.740037950664,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 16.0,
+      "demand_ratio": 1.0,
+      "cases": 1538,
+      "affected_cases": 154,
+      "affected_fraction": 0.10013003901170352,
+      "median_excess_affected": 0.07956426887940926,
+      "saturation_strength_psi": 5000.000000000001,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 16.0,
+      "demand_ratio": 1.25,
+      "cases": 1538,
+      "affected_cases": 1,
+      "affected_fraction": 0.0006501950585175553,
+      "median_excess_affected": 0.024589942104665363,
+      "saturation_strength_psi": 6819.259962049337,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 18.0,
+      "demand_ratio": 0.75,
+      "cases": 1538,
+      "affected_cases": 995,
+      "affected_fraction": 0.6469440832249674,
+      "median_excess_affected": 0.095679012345679,
+      "saturation_strength_psi": 2496.276991809382,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 18.0,
+      "demand_ratio": 1.0,
+      "cases": 1538,
+      "affected_cases": 599,
+      "affected_fraction": 0.3894668400520156,
+      "median_excess_affected": 0.07738095238095233,
+      "saturation_strength_psi": 3924.050632911393,
+      "capped_quantity_identity": true
+    },
+    {
+      "minimum_width_in": 18.0,
+      "demand_ratio": 1.25,
+      "cases": 1538,
+      "affected_cases": 102,
+      "affected_fraction": 0.06631989596879063,
+      "median_excess_affected": 0.053408118821903106,
+      "saturation_strength_psi": 5351.824274013404,
+      "capped_quantity_identity": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "verification_against_submission": {
+    "baseline_id": true,
+    "candidate_id": true,
+    "ratio_candidate_id": true,
+    "quantity_model_scenarios": true
+  },
+  "cases": 1538,
+  "c1": {
+    "denominator": 1538,
+    "lower_gwp_cases": 357,
+    "rate": 0.23211963589076723,
+    "median_gain_affected": 0.11078717201166181,
+    "lower_gwp_cases_outside_nrm": 34,
+    "rate_outside_nrm": 0.043092522179974654
+  },
+  "c2": {
+    "denominator": 1538,
+    "ratio_higher_gwp_cases": 995,
+    "rate": 0.6469440832249674,
+    "median_excess_affected": 0.095679012345679,
+    "median_break_even_volume_reduction": 0.08732394366197183,
+    "cases_outside_nrm": 684,
+    "rate_outside_nrm": 0.8669201520912547,
+    "overlap_with_c1": 38
+  },
+  "proposition2_check": {
+    "fstar_values_checked": 81,
+    "cases": 1538,
+    "between_or_agreement_violations": 0,
+    "dominated_capped_choices": 0
+  },
+  "grid_c3_rate_range": [
+    0.0,
+    0.6469440832249674
+  ],
+  "grid_c3p_rate_range": [
+    0.0,
+    0.6469440832249674
+  ]
+}

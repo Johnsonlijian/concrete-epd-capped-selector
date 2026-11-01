@@ -1,0 +1,8 @@
+company_label,source_cluster,legal_supplier_verified
+"martin marietta - smyrna ready mix concrete, llc.",source-cluster:smyrna,False
+smyrna ready mix,source-cluster:smyrna,False
+us concrete mix / smyrna ready mix,source-cluster:smyrna,False
+amrize,source-cluster:amrize-holcim,False
+holcim - aggregate industries,source-cluster:amrize-holcim,False
+source-cluster:smyrna,source-cluster:smyrna,False
+source-cluster:amrize-holcim,source-cluster:amrize-holcim,False

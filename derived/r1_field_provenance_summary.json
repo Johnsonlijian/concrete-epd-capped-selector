@@ -1,0 +1,124 @@
+{
+  "value_pattern": {
+    "records_28d": 37725,
+    "share_multiple_of_500": 0.9821338634857522,
+    "share_multiple_of_250": 0.992153744201458,
+    "share_multiple_of_100": 0.98960901259112,
+    "distinct_values": 50,
+    "top_values": {
+      "4000": 11257,
+      "5000": 6847,
+      "3000": 6645,
+      "4500": 3748,
+      "3500": 3171,
+      "6000": 2748,
+      "2500": 1209,
+      "7000": 435,
+      "5500": 429,
+      "8000": 408
+    }
+  },
+  "token_concordance": {
+    "none": 28484,
+    "one_concordant": 8777,
+    "one_discordant": 453,
+    "multiple": 11,
+    "records_28d": 37725,
+    "concordance_among_single_token": 0.9509209100758397,
+    "discordant_examples": [
+      {
+        "company": "altaview concrete",
+        "description": "aa(ae) 6500 psi high early",
+        "field_psi": 6000.0
+      },
+      {
+        "company": "altaview concrete",
+        "description": "3000 psi 1 1/2\" rock",
+        "field_psi": 3500.0
+      },
+      {
+        "company": "altaview concrete",
+        "description": "4000 psi udot aa(ae)",
+        "field_psi": 5000.0
+      },
+      {
+        "company": "altaview concrete",
+        "description": "4000 psi 60/40 pea gravel",
+        "field_psi": 5000.0
+      },
+      {
+        "company": "altaview concrete",
+        "description": "4500 psi low slump/ curb machine",
+        "field_psi": 4000.0
+      },
+      {
+        "company": "altaview concrete",
+        "description": "3000 psi 1 1/2\" rock",
+        "field_psi": 3500.0
+      },
+      {
+        "company": "altaview concrete",
+        "description": "4000 psi udot aa(ae)",
+        "field_psi": 5000.0
+      },
+      {
+        "company": "american rock products (arp)",
+        "description": "4000 psi 3/8 interior",
+        "field_psi": 5000.0
+      }
+    ]
+  },
+  "knife_river_cross_declaration": {
+    "source_rows": 479,
+    "compilation_rows_same_plants": 141,
+    "matched_pairs": 93,
+    "matched_pairs_numeric_strength_both": 59,
+    "strength_identical_share": 0.7627118644067796,
+    "matched_source_checked_pairs": 41,
+    "strength_identical_share_source_checked": 0.9512195121951219,
+    "strength_identical_share_quarantined": 0.3333333333333333,
+    "gwp_ratio_compilation_to_2018_median": 1.1831725878897568,
+    "gwp_ratio_q25_q75": [
+      1.1225485829369555,
+      1.2508811752678834
+    ],
+    "issue_dates_compilation": [
+      "1/10/2023",
+      "1/18/2023",
+      "12/21/2022",
+      "2/15/2023",
+      "2/27/2023",
+      "2/28/2023",
+      "2/6/2023",
+      "3/1/2023",
+      "3/13/2023"
+    ],
+    "operators_compilation": [
+      "ASTM International"
+    ]
+  },
+  "primary_candidates_value_pattern": {
+    "share_multiple_of_500": 0.987881981032666,
+    "distinct_values": 16
+  },
+  "fcr_reinterpretation": {
+    "cases_retained": 1226,
+    "cases_dropped_below_2500psi_or_single_strength": 312,
+    "c2_rate": 0.632137030995106,
+    "ratio_choice_changed_by_reinterpretation": 0.057096247960848286,
+    "c3_grid_range": [
+      0.0,
+      0.632137030995106
+    ],
+    "design_agreement": {
+      "min_carbon|capped": 0.9431994290375204,
+      "min_carbon|capped_effective": 0.9726787656334964,
+      "min_carbon|fixed_volume": 0.49550706905927133,
+      "min_carbon|ratio": 0.858537248504622,
+      "min_size|capped": 0.930502311038608,
+      "min_size|capped_effective": 0.9599816476345839,
+      "min_size|fixed_volume": 0.49557164219684613,
+      "min_size|ratio": 0.8458401305057096
+    }
+  }
+}
